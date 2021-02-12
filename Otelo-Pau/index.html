@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚪ Otello ⚫</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet"><!--Estils en general-->
+    <link href="css/animation.css" rel="stylesheet"> <!--Animacions-->
+    <link href="css/button.css" rel="stylesheet"> <!-- Para los botones del menu-->
+    <script src="js/otello.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bodybck">
+    <div class="centrat">
+        <div id="gameStart" class="centratInfo">
+            <!--Pantalla inici-->
+            <h1 class="text-4xl font-bold mb-6">Otello</h1>
+            <div class="flex">
+               
+                <div class="mx-2">
+                    <label class="text-lg font-bold"  for="jugador1">Jugador 1:</label><br>
+                    <input class="w-full mt-2 mb-6 px-3 py-2 border rounded-lg text-base text-gray-700 focus:outline-none"  type="text" id="jugador1" name="jugador1">
+                
+                </div>
+                <div class="mx-2">
+                    <label class="text-lg font-bold" for="jugador2">Jugador 2:</label><br>
+                    <input class="w-full mt-2 mb-6 px-3 py-2 border rounded-lg text-base text-gray-700 focus:outline-none" type="text" id="jugador2" name="jugador2">
+                </div>
+                
+            </div>
+            <div  class="text-lg font-bold" id="errorNom"></div>
+            <div  class="text-lg font-bold" id="errorNom2"></div>
+            <div>
+                
+                <div class="col-12 pb-5">
+                   
+                    <input class="checkbox-tools" type="radio" id="8" name="tamany" value="8" checked>
+                    <label class="for-checkbox-tools" for="8">
+                        8x8
+                    </label><!--
+                    --><input class="checkbox-tools" type="radio" name="tools" id="tool-3">
+                    <input class="checkbox-tools" type="radio" id="10" name="tamany" value="10" checked>
+                    <label class="for-checkbox-tools" for="10">
+                        10x10
+                    </label>
+                    <input class="checkbox-tools" type="radio" id="16" name="tamany" value="16" checked>
+                    <label class="for-checkbox-tools" for="16">
+                        16x16
+                    </label>
+                </div>
+                <div id="errorSize"></div>
+            </div>
+            
+            <button class=" text-xl bg-white transition duration-500 ease hover:bg-gray-100 text-gray-800 font-semibold px-6 py-4  rounded shadow-lg"
+            onclick="loadGame()">Començar partida</button>
+        </div>
+
+        <!--Joc-->
+        <div id="gameBoard" class="hidden">
+
+        </div>
+
+        <div id="gameEnd" class="hidden">
+            <h1 class="text-4xl font-bold mb-6">Ha guanyat el jugador <br><span id="winner">blank</span></h1>
+            <p class="text-2xl font-semibold mb-6">Vols tornar a jugar?</p>
+            <button class="bg-white transition duration-500 ease hover:bg-gray-100 text-gray-800 font-semibold px-6 py-3 border border-gray-400 rounded shadow" id="restartbutton">Reiniciar</button>
+
+        </div>
+
+    </div>
+    <!--Score-->
+    <div id="scoreBoard" class="hidden">
+        <div class="scoreBoardSection1 flex">
+            <div class="flex scoreBoardCenter flx-grw1 scoreBoardItem">
+                <div class="flx-grw1 scoreBoardCenter flex ">
+                    <div class="white flex scoreBoardIcon"></div>
+                    <p id="nomJugador1" class="scoreBoardText  flex scoreBoardName">J1</p>
+                </div>
+                <div class="scoreBoardText scoreBoardNum" id="scorejugador1">0</div>
+            </div>
+
+            <div class="flex scoreBoardCenter scoreBoardText ">-</div>
+
+            <div class="flex scoreBoardCenter flx-grw1 scoreBoardItem reverse">
+                <div class="flx-grw1 scoreBoardCenter flex reverse">
+                    <div class="black scoreBoardIcon"></div>
+                    <p id="nomJugador2" class="scoreBoardText  flex scoreBoardName">J2</p>
+                </div>
+                <div class="scoreBoardText scoreBoardNum" id="scorejugador2">0</div>
+            </div>
+        </div>
+
+        <div class="scoreBoardSection2 scoreBoardCenter scoreBoardTextAlert">
+            🛈 Li toca al jugador <span id="jugadorActual">placeholder</span>
+        </div>
+    </div>
+
+</body>
+
+</html>

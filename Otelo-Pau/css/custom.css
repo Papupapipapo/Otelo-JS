@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+html,body{
+    height:100%;
+    overflow-y: hidden;
+}
+html,body,input,button{font-family: 'Open Sans', sans-serif;}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+	font-size: 17px;
+	line-height: 30px;
+	color: #1f2029;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+
+/*Generals */
+.centrat{
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+    position: absolute; /*Can also be `fixed`*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto; 
+    place-items:center;
+    
+}
+.centratInfo{
+    text-align: center;
+    height:100% ;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    flex-direction: column;
+    background:#f2f2f2;
+    z-index:1;
+}
+.centratInfo h1{
+    margin-top : 0;
+}
+
+.hidden{
+    display: none;
+}
+.flex{
+    display:flex;
+}
+.cien{
+    width:100%;
+    height:100%;
+}
+/* GAMEBOARD */
+.gameboardColumn{
+    flex-grow: 1;
+    position: relative;
+    outline: #f2f2f2 2px solid;
+}
+.fitxa8{
+    background-color: #DE4381;
+}
+
+.fitxa10{
+    background-color: #2935BA;
+}
+.fitxa16{
+    background-color: #CC544E;
+}
+.available{
+    background-color: #ffffb2 !important;
+}
+.fitxa{
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    width: inherit;
+    height: inherit ;
+    position: absolute;
+    border-radius: 50px;
+    
+}
+.white{
+    background: #fff;
+    border: black 1px solid;
+    
+}
+.black{
+    background: black;
+    border: white 1px solid;
+    
+}
+.error{
+    background: red;
+}
+/* SCOREBOARD */
+.scoreBoard{
+    position: absolute;
+    bottom:2%;
+    left:0px;
+    right:0px;
+    margin:auto;
+    max-width: 45rem;
+    background: #fffacd;
+    border: 1px #000 solid;
+    border-radius: 20px;
+    flex-direction: row;
+    padding:10px;
+    color: black;
+}
+.scoreBoardSection1{
+    margin-bottom: 5px;
+    align-items: center;
+  justify-content: center;
+}
+.scoreBoardSection2{
+    height:20px;
+}
+.scoreBoardCenter{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.scoreBoardText{
+    margin: 0;
+    font-weight: bold;
+    font-size:30px;
+    align-items: center;
+  justify-content: center;
+}
+.flx-grw1{
+    flex-grow: 1;
+}
+.scoreBoardIcon{
+    width:38px;
+    height:38px;
+    border-radius: 100px;
+}
+.scoreBoardItem{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.scoreBoardName{
+    min-width: 216.3px;
+}
+.scoreBoardNum{
+    font-size:36px;
+}
+.scoreBoardColumn{
+    flex-direction: column;
+}
+.scoreBoardTextAlert{
+    font-size: 20px;
+}

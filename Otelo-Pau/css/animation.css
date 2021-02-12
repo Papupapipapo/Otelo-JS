@@ -1,0 +1,99 @@
+.blue {
+    background: linear-gradient(303deg, #181f6e, #7d86f0, #3444ed);
+    background-size: 600% 600%;
+
+    -webkit-animation: blue 42s ease infinite;
+    -moz-animation: blue 42s ease infinite;
+    animation: blue 42s ease infinite;
+}
+
+@-webkit-keyframes blue {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes blue {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes blue {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+
+
+.bodybck {
+    background: linear-gradient(303deg, #4e4e4e, #e3e3e3);
+    background-size: 400% 400%;
+
+    -webkit-animation: BLACKWHITE 46s ease infinite;
+    -moz-animation: BLACKWHITE 46s ease infinite;
+    animation: BLACKWHITE 46s ease infinite;
+}
+
+@-webkit-keyframes BLACKWHITE {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BLACKWHITE {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes BLACKWHITE {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+
+.pastelred {
+    background: linear-gradient(303deg, #ff817a, #ff6961);
+    background-size: 400% 400%;
+
+    -webkit-animation: pastelred 42s ease infinite;
+    -moz-animation: pastelred 42s ease infinite;
+    animation: pastelred 42s ease infinite;
+}
+
+@-webkit-keyframes pastelred {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes pastelred {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes pastelred {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+.pinkred {
+    background: linear-gradient(303deg, #c43beb, #f53de2, #f5433d, #eb593b);
+    background-size: 800% 800%;
+
+    -webkit-animation: pinkRed 29s ease infinite;
+    -moz-animation: pinkRed 29s ease infinite;
+    animation: pinkRed 29s ease infinite;
+}
+
+@-webkit-keyframes pinkRed {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes pinkRed {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes pinkRed {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
